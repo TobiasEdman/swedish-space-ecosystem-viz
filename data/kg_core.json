@@ -17776,14 +17776,6 @@
         "tl": ""
       },
       {
-        "s": "sei",
-        "t": "101004174",
-        "tp": "participates_in",
-        "w": 1,
-        "sl": "",
-        "tl": ""
-      },
-      {
         "s": "hopsworks",
         "t": "101004188",
         "tp": "participates_in",
@@ -17818,30 +17810,6 @@
       {
         "s": "chalmers_tekniska_hogskola_ab",
         "t": "101004331",
-        "tp": "participates_in",
-        "w": 1,
-        "sl": "",
-        "tl": ""
-      },
-      {
-        "s": "alma_lov_museum_of_unexp._art",
-        "t": "101005982",
-        "tp": "participates_in",
-        "w": 1,
-        "sl": "",
-        "tl": ""
-      },
-      {
-        "s": "ku",
-        "t": "101005982",
-        "tp": "participates_in",
-        "w": 1,
-        "sl": "",
-        "tl": ""
-      },
-      {
-        "s": "umea_universitet",
-        "t": "101006255",
         "tp": "participates_in",
         "w": 1,
         "sl": "",
