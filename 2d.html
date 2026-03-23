@@ -884,9 +884,19 @@ var KG = {};
      23 Swedish inst + 20 international inst + 284 swe + 100 intl researchers
      ============================================================ */
   function SystemGraph() {
-  
-    /* Data from KG */
-    var sysSwInst=KG.sysSwInst,sysIntlInst=KG.sysIntlInst,sysRes=KG.sysRes,sysIntlRes=KG.sysIntlRes;
+
+    /* Data from KG — enrich sysSwInst with domain cats from sweInst */
+    var sysSwInst=KG.sysSwInst.map(function(n){
+      var realId=n.id.replace("SWE_","");
+      var inst=KG.sweInst[realId]||{};
+      return Object.assign({},n,{label:n.label||realId,cats:inst.cats||{},domain:inst.domain||n.domain||"space_physics"});
+    });
+    var sysIntlInst=KG.sysIntlInst.map(function(n){
+      var realId=n.id.replace("INTL_","");
+      var inst=KG.intlInst[realId]||{};
+      return Object.assign({},n,{label:n.label||realId,cats:inst.cats||{},domain:inst.domain||n.domain||"space_physics",country:inst.flag||""});
+    });
+    var sysRes=KG.sysRes,sysIntlRes=KG.sysIntlRes;
     var sysSwLinks=KG.sysSwLinks,sysIntlLinks=KG.sysIntlLinks,sysAffLinks=KG.sysAffLinks;
     var sysIntlAffLinks=KG.sysIntlAffLinks,sysCrossLinks=KG.sysCrossLinks,sysResIntlLinks=KG.sysResIntlLinks;
   
@@ -984,20 +994,21 @@ var KG = {};
       var intlMaxW=Math.max.apply(null,fInstIntlLinks.map(function(l){return l.w;}).concat([1]));
       var crossMaxW=Math.max.apply(null,fCrossLinks.concat(fResIntlLinks).map(function(l){return l.w||1;}).concat([1]));
   
-      /* draw layers */
+      /* draw layers — all gold */
       var affLine=g.append("g").selectAll("line").data(allLinks.filter(function(l){return l.linkType==="aff"||l.linkType==="intl_aff";})).join("line")
-        .attr("stroke","#1e293b").attr("stroke-width",0.4).attr("stroke-opacity",0.12).attr("stroke-dasharray","1,2");
+        .attr("stroke","#eab308").attr("stroke-width",0.4).attr("stroke-opacity",0.06).attr("stroke-dasharray","1,2");
       var swLine=g.append("g").selectAll("line").data(allLinks.filter(function(l){return l.linkType==="swe_swe";})).join("line")
-        .attr("stroke","#475569").attr("stroke-width",function(d){return 0.5+(d.w/swMaxW)*3;})
-        .attr("stroke-opacity",function(d){return 0.08+(d.w/swMaxW)*0.25;});
+        .attr("stroke","#eab308").attr("stroke-width",function(d){return 0.5+(d.w/swMaxW)*4;})
+        .attr("stroke-opacity",function(d){return 0.15+(d.w/swMaxW)*0.4;});
       var intlLine=g.append("g").selectAll("line").data(allLinks.filter(function(l){return l.linkType==="swe_intl";})).join("line")
-        .attr("stroke","#64748b").attr("stroke-width",function(d){return 0.5+(d.w/intlMaxW)*2.5;})
+        .attr("stroke","#eab308").attr("stroke-width",function(d){return 0.5+(d.w/intlMaxW)*3;})
+
         .attr("stroke-opacity",function(d){return 0.06+(d.w/intlMaxW)*0.2;}).attr("stroke-dasharray","4,3");
       var crossLine=g.append("g").selectAll("line").data(allLinks.filter(function(l){return l.linkType==="cross";})).join("line")
-        .attr("stroke","#f97316").attr("stroke-width",function(d){return 1+(d.w/crossMaxW)*3.5;})
+        .attr("stroke","#eab308").attr("stroke-width",function(d){return 1+(d.w/crossMaxW)*4;})
         .attr("stroke-opacity",function(d){return 0.3+(d.w/crossMaxW)*0.5;});
       var resIntlLine=g.append("g").selectAll("line").data(allLinks.filter(function(l){return l.linkType==="res_intl";})).join("line")
-        .attr("stroke","#06b6d4").attr("stroke-width",function(d){return 1+(d.w/crossMaxW)*3;})
+        .attr("stroke","#eab308").attr("stroke-width",function(d){return 1+(d.w/crossMaxW)*3.5;})
         .attr("stroke-opacity",function(d){return 0.35+(d.w/crossMaxW)*0.45;});
   
       /* intl institution nodes */
@@ -1029,7 +1040,27 @@ var KG = {};
       swG.append("text").attr("text-anchor","middle").attr("dy",function(d){return Math.max(10,d.r*0.32)+4;})
         .attr("fill","#475569").attr("font-size",6).attr("font-family","DM Sans, sans-serif")
         .text(function(d){return d.researchers>0?d.researchers+" forskare":"";});
-  
+      // Pie charts on Swedish institution nodes
+      swG.each(function(d){
+        if(d.r<20||!d.cats) return; var g2=d3.select(this);
+        var entries=domKeys.map(function(k){return[k,d.cats[k]||0];}).filter(function(e){return e[1]>0;});
+        var total=entries.reduce(function(a,e){return a+e[1];},0); if(!total) return;
+        var pie=d3.pie().value(function(x){return x[1];}).sort(null);
+        var arc=d3.arc().innerRadius(d.r*0.45).outerRadius(d.r*0.82);
+        g2.selectAll("path.pie").data(pie(entries)).join("path").attr("class","pie").attr("d",arc)
+          .attr("fill",function(x){return domMeta[x.data[0]]?domMeta[x.data[0]].color:"#475569";}).attr("fill-opacity",0.5);
+      });
+      // Pie charts on international institution nodes
+      intlG.each(function(d){
+        if(d.r<20||!d.cats) return; var g2=d3.select(this);
+        var entries=domKeys.map(function(k){return[k,d.cats[k]||0];}).filter(function(e){return e[1]>0;});
+        var total=entries.reduce(function(a,e){return a+e[1];},0); if(!total) return;
+        var pie=d3.pie().value(function(x){return x[1];}).sort(null);
+        var arc=d3.arc().innerRadius(d.r*0.45).outerRadius(d.r*0.82);
+        g2.selectAll("path.pie").data(pie(entries)).join("path").attr("class","pie").attr("d",arc)
+          .attr("fill",function(x){return domMeta[x.data[0]]?domMeta[x.data[0]].color:"#475569";}).attr("fill-opacity",0.5);
+      });
+
       /* researcher nodes (swe + intl) */
       var resG=g.append("g").selectAll("g").data(allNodes.filter(function(d){return d.nodeType==="researcher"||d.nodeType==="intl_researcher";})).join("g").attr("cursor","pointer");
       resG.append("circle").attr("r",function(d){return d.r;})
