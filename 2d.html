@@ -1003,7 +1003,8 @@ var KG = {};
       /* intl institution nodes */
       var intlG=g.append("g").selectAll("g").data(allNodes.filter(function(d){return d.nodeType==="intl_inst";})).join("g").attr("cursor","pointer");
       intlG.append("circle").attr("r",function(d){return d.r+3;}).attr("fill","none")
-        .attr("stroke","#475569").attr("stroke-width",2).attr("stroke-dasharray","3,2").attr("stroke-opacity",0.2);
+        .attr("stroke","#475569").attr("stroke-width",2).attr("stroke-dasharray","none").attr("stroke-opacity",0.25);
+        intlG.selectAll("circle").filter(function(d,i){return i%2===0;}).attr("filter","url(#glow2)");
       intlG.append("circle").attr("r",function(d){return d.r;})
         .attr("fill","#0f172a").attr("stroke","#475569").attr("stroke-width",2).attr("stroke-opacity",0.4);
       intlG.append("text").attr("text-anchor","middle").attr("dy",function(d){return d.r*0.25;})
