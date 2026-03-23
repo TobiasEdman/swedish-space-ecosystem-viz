@@ -1735,6 +1735,9 @@ var KG = {};
         var domCols={earth_obs:"#22c55e",wireless:"#3b82f6",space_physics:"#f59e0b",climate:"#06b6d4",astronomy:"#a855f7",solar_system:"#f43f5e",photonics:"#ec4899",quantum:"#14b8a6"};
         var actCols={PRC:"#3b82f6",REC:"#10b981",HES:"#f59e0b",PUB:"#a855f7"};
         var c=domCols[d.pd]||actCols[d.at]||"#f43f5e";
+        // Flag above node
+        el.append("text").attr("text-anchor","middle").attr("y",-d.radius*0.7-5)
+          .attr("font-size",14).text(ccFlag(d.cc));
         // Glow
         el.append("rect").attr("width",d.radius*2+6).attr("height",d.radius*1.4+6).attr("x",-d.radius-3).attr("y",-d.radius*0.7-3)
           .attr("rx",7).attr("fill","none").attr("stroke",c).attr("stroke-width",1.2).attr("stroke-opacity",0.2).attr("filter","url(#mgGlow)");
@@ -1744,9 +1747,6 @@ var KG = {};
         // Activity type dot
         el.append("circle").attr("cx",d.radius-4).attr("cy",-d.radius*0.7+4).attr("r",3)
           .attr("fill",actCols[d.at]||"#64748b").attr("stroke","#0f172a").attr("stroke-width",0.5);
-        // Flag
-        el.append("text").attr("x",-d.radius+5).attr("y",-d.radius*0.7+5).attr("dy","0.8em").attr("font-size",10)
-          .text(ccFlag(d.cc));
         // Label
         el.append("text").attr("text-anchor","middle").attr("dy",3)
           .attr("font-size",Math.min(9,d.radius*0.42)).attr("fill","#e2e8f0").attr("font-weight",600).attr("font-family","DM Sans, sans-serif")
@@ -2124,10 +2124,13 @@ var KG = {};
           .text(d.label.length>10?d.label.substring(0,9):d.label);
       });
   
-      // Institution nodes: rounded rect with flag
+      // Institution nodes: rounded rect with flag above
       node.filter(function(d){return d.nodeKind==="intl";}).each(function(d){
         var el=d3.select(this);
         var c=domCols[d.pd]||actCols[d.at]||"#f43f5e";
+        // Flag above node (prominent, like institution view)
+        el.append("text").attr("text-anchor","middle").attr("y",-d.radius*0.7-6)
+          .attr("font-size",16).text(ccFlag(d.cc));
         // Glow
         el.append("rect").attr("width",d.radius*2+6).attr("height",d.radius*1.4+6).attr("x",-d.radius-3).attr("y",-d.radius*0.7-3)
           .attr("rx",7).attr("fill","none").attr("stroke",c).attr("stroke-width",1.2).attr("stroke-opacity",0.2).attr("filter","url(#icGlow)");
@@ -2137,9 +2140,6 @@ var KG = {};
         // Activity type dot
         el.append("circle").attr("cx",d.radius-4).attr("cy",-d.radius*0.7+4).attr("r",3.5)
           .attr("fill",actCols[d.at]||"#64748b").attr("stroke","#0f172a").attr("stroke-width",0.5);
-        // Flag top-left
-        el.append("text").attr("x",-d.radius+4).attr("y",-d.radius*0.7+4).attr("dy","0.85em").attr("font-size",11)
-          .text(ccFlag(d.cc));
         // Label
         el.append("text").attr("text-anchor","middle").attr("dy",3)
           .attr("font-size",Math.min(10,d.radius*0.45)).attr("fill","#e2e8f0").attr("font-weight",600).attr("font-family","DM Sans, sans-serif")
