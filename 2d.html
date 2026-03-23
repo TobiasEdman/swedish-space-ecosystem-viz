@@ -398,20 +398,17 @@ var KG = {};
         .call(d3.drag().on("start",function(e,d){if(!e.active)simRef.current.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
           .on("drag",function(e,d){d.fx=e.x;d.fy=e.y;}).on("end",function(e,d){if(!e.active)simRef.current.alphaTarget(0);d.fx=null;d.fy=null;}));
   
-      // Swedish nodes: domain-colored circle with glow
-      node.filter(function(d){return !d.isIntl;}).append("circle").attr("r",function(d){return d.r+3;}).attr("fill","none")
+      // ALL nodes: domain-colored circle with glow (same for Swedish and international)
+      node.append("circle").attr("r",function(d){return d.r+3;}).attr("fill","none")
         .attr("stroke",function(d){return (domMeta[d.domain]||{color:"#eab308"}).color;})
         .attr("stroke-width",1.5).attr("stroke-opacity",0.35).attr("filter","url(#glow2)");
-      node.filter(function(d){return !d.isIntl;}).append("circle").attr("r",function(d){return d.r;})
+      node.append("circle").attr("r",function(d){return d.r;})
         .attr("fill",function(d){return (domMeta[d.domain]||{color:"#eab308"}).color+"15";})
         .attr("stroke",function(d){return (domMeta[d.domain]||{color:"#eab308"}).color;})
         .attr("stroke-width",1.5);
-      // International nodes: blue circle with flag inside
-      node.filter(function(d){return d.isIntl;}).append("circle").attr("r",function(d){return d.r;})
-        .attr("fill","#1e3a5f").attr("stroke","#3b82f6").attr("stroke-width",1.5).attr("stroke-opacity",0.6);
   
       node.each(function(d){
-        if(d.isIntl||d.r<16||!d.cats) return; var g2=d3.select(this);
+        if(d.r<16||!d.cats) return; var g2=d3.select(this);
         var entries=domKeys.map(function(k){return[k,d.cats[k]||0];}).filter(function(e){return e[1]>0;});
         var total=entries.reduce(function(a,e){return a+e[1];},0); if(!total) return;
         var pie=d3.pie().value(function(x){return x[1];}).sort(null);
@@ -420,14 +417,12 @@ var KG = {};
           .attr("fill",function(x){return domMeta[x.data[0]]?domMeta[x.data[0]].color:"#475569";}).attr("fill-opacity",0.5);
       });
   
+      // International nodes: flag emoji above the circle
       node.filter(function(d){return d.isIntl;}).append("text").attr("text-anchor","middle")
-        .attr("dy",function(d){return d.r*0.2;}).attr("font-size",function(d){return Math.max(16,d.r*1.2);})
-        .text(function(d){var cc=d.flag||d.country||"";if(cc.length===2){try{return String.fromCodePoint(0x1F1E6+cc.charCodeAt(0)-65)+String.fromCodePoint(0x1F1E6+cc.charCodeAt(1)-65);}catch(e){}}return cc;});
-      node.filter(function(d){return d.isIntl;}).append("text").attr("text-anchor","middle")
-        .attr("dy",function(d){return d.r*0.2+14;}).attr("font-size",7).attr("fill","#94a3b8")
-        .text(function(d){return (d.label||d.id).length>10?(d.label||d.id).substring(0,9)+"…":(d.label||d.id);});
+        .attr("dy",function(d){return -(d.r+6);}).attr("font-size",function(d){return Math.max(14,d.r*0.8);})
+        .text(function(d){var cc=(d.flag||d.country||"").toUpperCase();if(cc.length>=2){try{return String.fromCodePoint(0x1F1E6+cc.charCodeAt(0)-65)+String.fromCodePoint(0x1F1E6+cc.charCodeAt(1)-65);}catch(e){}}return cc;});
   
-      node.filter(function(d){return !d.isIntl;}).append("text").attr("text-anchor","middle").attr("dy",4)
+      node.append("text").attr("text-anchor","middle").attr("dy",4)
         .attr("fill","#e2e8f0").attr("font-size",function(d){return Math.max(8,d.r*0.3);}).attr("font-weight",700).attr("font-family","DM Sans, sans-serif")
         .text(function(d){if(sizeBy==="citations") return d.citations>=1000?(d.citations/1000).toFixed(1)+"k":d.citations;if(sizeBy==="avg") return d.avg;if(sizeBy==="natFunding") return d.natFunding>0?d.natFunding.toFixed(0)+"M":"";if(sizeBy==="natProjects") return d.natProjects>0?d.natProjects+"p":"";return d.papers;});
   
