@@ -589,7 +589,7 @@ var KG = {};
     var _sb=useState("papers"),sizeBy=_sb[0],setSizeBy=_sb[1];
     var _sf=useState("all"),spaceFilter=_sf[0],setSpaceFilter=_sf[1];
     var _lm=useState(2),linkMin=_lm[0],setLinkMin=_lm[1];
-    var _cb=useState("inst"),colorBy=_cb[0],setColorBy=_cb[1];
+    var _cb=useState("domain"),colorBy=_cb[0],setColorBy=_cb[1];
     var W=1200,H=800;
   
     var domKeys=["space_physics","solar_system","astronomy","earth_obs","climate","wireless","quantum","photonics"];
@@ -648,8 +648,8 @@ var KG = {};
       }
   
       var link=g.append("g").selectAll("line").data(slinks).join("line")
-        .attr("stroke","#334155").attr("stroke-opacity",function(d){return 0.12+(d.weight/maxW)*0.35;})
-        .attr("stroke-width",function(d){return wScale(d.weight);});
+        .attr("stroke","#eab308").attr("stroke-opacity",function(d){return 0.15+(d.weight/maxW)*0.45;})
+        .attr("stroke-width",function(d){return wScale(d.weight)*1.5;});
   
       var node=g.append("g").selectAll("g").data(snodes).join("g").attr("cursor","pointer")
         .call(d3.drag().on("start",function(e,d){if(!e.active)simRef.current.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
