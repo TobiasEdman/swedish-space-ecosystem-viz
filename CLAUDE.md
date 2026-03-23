@@ -26,7 +26,7 @@ des-agent ingest --repo space-ecosystem-viz
 
 - **Namn:** space-ecosystem-viz
 - **Domän:** Publik visualisering (statisk HTML) av svenska rymdekosystemets kunskapsgraf
-- **Nyckelgränssnitt:** `index.html` (8-vyig 3D-explorer med Three.js), `combined.html` (2D med React + D3)
+- **Nyckelgränssnitt:** `index.html` (8-vyig 3D-explorer med Three.js), `2d.html` (2D med React + D3)
 - **Beroenden:**
   - **Upstream:** space-ecosystem-v2 exporterar `kg_core.json` + `kg_views.json` till `data/`
 
