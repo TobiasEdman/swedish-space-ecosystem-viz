@@ -5637,7 +5637,295 @@
       }
     }
   },
-  "intlInst": {},
+  "intlInst": {
+    "MPG": {
+      "label": "Max Planck Society",
+      "papers": 80,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "astronomy",
+      "flag": "Germany",
+      "cats": {
+        "climate": 9,
+        "earth_obs": 16,
+        "wireless": 19,
+        "space_physics": 68,
+        "astronomy": 76,
+        "solar_system": 75,
+        "photonics": 4
+      }
+    },
+    "Paris": {
+      "label": "Université Paris",
+      "papers": 68,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "France",
+      "cats": {
+        "quantum": 2,
+        "astronomy": 62,
+        "earth_obs": 19,
+        "photonics": 9,
+        "wireless": 20,
+        "solar_system": 66,
+        "space_physics": 54,
+        "climate": 5
+      }
+    },
+    "ObsParis": {
+      "label": "Observatoire de Paris",
+      "papers": 66,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "France",
+      "cats": {
+        "astronomy": 62,
+        "space_physics": 54,
+        "solar_system": 63,
+        "climate": 6,
+        "wireless": 17,
+        "earth_obs": 14,
+        "photonics": 6
+      }
+    },
+    "DLR": {
+      "label": "Deutsches Zentrum für Luft- und Raumfahrt",
+      "papers": 56,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "Germany",
+      "cats": {
+        "climate": 5,
+        "astronomy": 53,
+        "solar_system": 54,
+        "space_physics": 47,
+        "wireless": 15,
+        "earth_obs": 12,
+        "photonics": 4
+      }
+    },
+    "Bern": {
+      "label": "Universität Bern",
+      "papers": 56,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "Switzerland",
+      "cats": {
+        "climate": 5,
+        "astronomy": 53,
+        "wireless": 15,
+        "photonics": 4,
+        "earth_obs": 12,
+        "solar_system": 54,
+        "space_physics": 47
+      }
+    },
+    "Imperial": {
+      "label": "Imperial College London",
+      "papers": 37,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "space_physics",
+      "flag": "UK",
+      "cats": {
+        "solar_system": 36,
+        "space_physics": 37,
+        "astronomy": 22,
+        "earth_obs": 7,
+        "wireless": 7,
+        "photonics": 1,
+        "climate": 1
+      }
+    },
+    "NASA GSFC": {
+      "label": "NASA Goddard Space Flight Center",
+      "papers": 34,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "astronomy",
+      "flag": "USA",
+      "cats": {
+        "astronomy": 29,
+        "space_physics": 28,
+        "solar_system": 24,
+        "earth_obs": 13,
+        "climate": 3,
+        "wireless": 6,
+        "quantum": 2,
+        "photonics": 5
+      }
+    },
+    "UC System": {
+      "label": "University of California",
+      "papers": 27,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "USA",
+      "cats": {
+        "astronomy": 18,
+        "space_physics": 15,
+        "solar_system": 26,
+        "wireless": 8,
+        "climate": 4,
+        "earth_obs": 8,
+        "quantum": 2,
+        "photonics": 5
+      }
+    },
+    "ETH Zurich": {
+      "label": "ETH Zürich",
+      "papers": 25,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "Switzerland",
+      "cats": {
+        "earth_obs": 2,
+        "space_physics": 23,
+        "astronomy": 23,
+        "solar_system": 24,
+        "wireless": 4
+      }
+    },
+    "SwRI": {
+      "label": "Southwest Research Institute",
+      "papers": 20,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "space_physics",
+      "flag": "USA",
+      "cats": {
+        "astronomy": 19,
+        "space_physics": 20,
+        "solar_system": 12,
+        "earth_obs": 4,
+        "climate": 1
+      }
+    },
+    "Sorbonne": {
+      "label": "Sorbonne Université",
+      "papers": 16,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "France",
+      "cats": {
+        "earth_obs": 10,
+        "climate": 3,
+        "wireless": 6,
+        "space_physics": 8,
+        "astronomy": 11,
+        "quantum": 2,
+        "photonics": 5,
+        "solar_system": 12
+      }
+    },
+    "CU Boulder": {
+      "label": "University of Colorado Boulder",
+      "papers": 13,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "solar_system",
+      "flag": "USA",
+      "cats": {
+        "quantum": 2,
+        "astronomy": 9,
+        "earth_obs": 7,
+        "photonics": 5,
+        "wireless": 5,
+        "solar_system": 13,
+        "space_physics": 7,
+        "climate": 1
+      }
+    },
+    "CAS": {
+      "label": "Chinese Academy of Sciences",
+      "papers": 9,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "astronomy",
+      "flag": "China",
+      "cats": {
+        "astronomy": 9,
+        "space_physics": 7,
+        "solar_system": 7,
+        "climate": 1,
+        "wireless": 3,
+        "earth_obs": 3
+      }
+    },
+    "JHU": {
+      "label": "Johns Hopkins University",
+      "papers": 3,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "space_physics",
+      "flag": "USA",
+      "cats": {
+        "climate": 1,
+        "space_physics": 3,
+        "astronomy": 3,
+        "solar_system": 2
+      }
+    },
+    "FMI": {
+      "label": "Finnish Meteorological Institute",
+      "papers": 2,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "climate",
+      "flag": "Finland",
+      "cats": {
+        "climate": 2,
+        "space_physics": 1,
+        "astronomy": 1,
+        "solar_system": 1
+      }
+    },
+    "ESA": {
+      "label": "European Space Agency",
+      "papers": 2,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "astronomy",
+      "flag": "International",
+      "cats": {
+        "astronomy": 2,
+        "space_physics": 2,
+        "solar_system": 2
+      }
+    },
+    "Leicester": {
+      "label": "University of Leicester",
+      "papers": 1,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "climate",
+      "flag": "UK",
+      "cats": {
+        "climate": 1,
+        "space_physics": 1,
+        "astronomy": 1
+      }
+    },
+    "Edinburgh": {
+      "label": "University of Edinburgh",
+      "papers": 1,
+      "citations": 0,
+      "avg": 0.0,
+      "domain": "climate",
+      "flag": "UK",
+      "cats": {
+        "climate": 1,
+        "solar_system": 1
+      }
+    }
+  },
   "sweLinks": [
     {
       "s": "IRF",
@@ -6015,7 +6303,348 @@
       "w": 1
     }
   ],
-  "intlLinks": [],
+  "intlLinks": [
+    {
+      "s": "SU",
+      "t": "Paris",
+      "w": 60
+    },
+    {
+      "s": "SU",
+      "t": "MPG",
+      "w": 59
+    },
+    {
+      "s": "SU",
+      "t": "ObsParis",
+      "w": 55
+    },
+    {
+      "s": "SU",
+      "t": "DLR",
+      "w": 54
+    },
+    {
+      "s": "SU",
+      "t": "Bern",
+      "w": 54
+    },
+    {
+      "s": "Chalmers",
+      "t": "ObsParis",
+      "w": 41
+    },
+    {
+      "s": "Chalmers",
+      "t": "MPG",
+      "w": 40
+    },
+    {
+      "s": "LU",
+      "t": "DLR",
+      "w": 35
+    },
+    {
+      "s": "LU",
+      "t": "MPG",
+      "w": 35
+    },
+    {
+      "s": "LU",
+      "t": "ObsParis",
+      "w": 35
+    },
+    {
+      "s": "LU",
+      "t": "Bern",
+      "w": 35
+    },
+    {
+      "s": "LU",
+      "t": "Paris",
+      "w": 34
+    },
+    {
+      "s": "IRF",
+      "t": "Imperial",
+      "w": 33
+    },
+    {
+      "s": "Chalmers",
+      "t": "Paris",
+      "w": 32
+    },
+    {
+      "s": "Chalmers",
+      "t": "Bern",
+      "w": 32
+    },
+    {
+      "s": "Chalmers",
+      "t": "DLR",
+      "w": 32
+    },
+    {
+      "s": "LU",
+      "t": "ETH Zurich",
+      "w": 25
+    },
+    {
+      "s": "Chalmers",
+      "t": "ETH Zurich",
+      "w": 23
+    },
+    {
+      "s": "SU",
+      "t": "ETH Zurich",
+      "w": 23
+    },
+    {
+      "s": "IRF",
+      "t": "NASA GSFC",
+      "w": 20
+    },
+    {
+      "s": "IRF",
+      "t": "SwRI",
+      "w": 20
+    },
+    {
+      "s": "UU",
+      "t": "SwRI",
+      "w": 16
+    },
+    {
+      "s": "UU",
+      "t": "NASA GSFC",
+      "w": 16
+    },
+    {
+      "s": "UU",
+      "t": "Imperial",
+      "w": 16
+    },
+    {
+      "s": "Chalmers",
+      "t": "UC System",
+      "w": 14
+    },
+    {
+      "s": "UU",
+      "t": "MPG",
+      "w": 12
+    },
+    {
+      "s": "SU",
+      "t": "UC System",
+      "w": 11
+    },
+    {
+      "s": "IRF",
+      "t": "MPG",
+      "w": 10
+    },
+    {
+      "s": "KTH",
+      "t": "NASA GSFC",
+      "w": 8
+    },
+    {
+      "s": "KTH",
+      "t": "SwRI",
+      "w": 8
+    },
+    {
+      "s": "KTH",
+      "t": "MPG",
+      "w": 7
+    },
+    {
+      "s": "KTH",
+      "t": "Imperial",
+      "w": 7
+    },
+    {
+      "s": "Chalmers",
+      "t": "CAS",
+      "w": 7
+    },
+    {
+      "s": "SU",
+      "t": "NASA GSFC",
+      "w": 7
+    },
+    {
+      "s": "LTU",
+      "t": "UC System",
+      "w": 7
+    },
+    {
+      "s": "UU",
+      "t": "UC System",
+      "w": 6
+    },
+    {
+      "s": "SU",
+      "t": "Sorbonne",
+      "w": 6
+    },
+    {
+      "s": "SU",
+      "t": "CU Boulder",
+      "w": 6
+    },
+    {
+      "s": "UU",
+      "t": "DLR",
+      "w": 4
+    },
+    {
+      "s": "UU",
+      "t": "ObsParis",
+      "w": 4
+    },
+    {
+      "s": "UU",
+      "t": "Bern",
+      "w": 4
+    },
+    {
+      "s": "UU",
+      "t": "Paris",
+      "w": 3
+    },
+    {
+      "s": "UU",
+      "t": "ETH Zurich",
+      "w": 2
+    },
+    {
+      "s": "SU",
+      "t": "ESA",
+      "w": 2
+    },
+    {
+      "s": "SU",
+      "t": "JHU",
+      "w": 2
+    },
+    {
+      "s": "IRF",
+      "t": "Leicester",
+      "w": 1
+    },
+    {
+      "s": "IRF",
+      "t": "FMI",
+      "w": 1
+    },
+    {
+      "s": "IRF",
+      "t": "JHU",
+      "w": 1
+    },
+    {
+      "s": "KTH",
+      "t": "CAS",
+      "w": 1
+    },
+    {
+      "s": "Chalmers",
+      "t": "Imperial",
+      "w": 1
+    },
+    {
+      "s": "Chalmers",
+      "t": "Sorbonne",
+      "w": 1
+    },
+    {
+      "s": "UU",
+      "t": "CAS",
+      "w": 1
+    },
+    {
+      "s": "SU",
+      "t": "CAS",
+      "w": 1
+    },
+    {
+      "s": "SU",
+      "t": "FMI",
+      "w": 1
+    },
+    {
+      "s": "LU",
+      "t": "CU Boulder",
+      "w": 1
+    },
+    {
+      "s": "LU",
+      "t": "FMI",
+      "w": 1
+    },
+    {
+      "s": "LU",
+      "t": "CAS",
+      "w": 1
+    },
+    {
+      "s": "LTU",
+      "t": "Edinburgh",
+      "w": 1
+    },
+    {
+      "s": "LTU",
+      "t": "Leicester",
+      "w": 1
+    },
+    {
+      "s": "LTU",
+      "t": "FMI",
+      "w": 1
+    },
+    {
+      "s": "LTU",
+      "t": "JHU",
+      "w": 1
+    },
+    {
+      "s": "FOI",
+      "t": "Leicester",
+      "w": 1
+    },
+    {
+      "s": "FOI",
+      "t": "FMI",
+      "w": 1
+    },
+    {
+      "s": "FOI",
+      "t": "JHU",
+      "w": 1
+    },
+    {
+      "s": "SMHI",
+      "t": "NASA GSFC",
+      "w": 1
+    },
+    {
+      "s": "SMHI",
+      "t": "MPG",
+      "w": 1
+    },
+    {
+      "s": "SMHI",
+      "t": "Sorbonne",
+      "w": 1
+    },
+    {
+      "s": "SMHI",
+      "t": "CAS",
+      "w": 1
+    }
+  ],
   "resNodes": [
     {
       "id": "Khotyaintsev Y.V.",
