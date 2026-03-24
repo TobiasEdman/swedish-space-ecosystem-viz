@@ -906,7 +906,7 @@
       },
       {
         "id": "SSC",
-        "label": "Swedish Space Corporation",
+        "label": "SSC Space",
         "type": "university",
         "dom": "",
         "city": "Solna",
@@ -3152,6 +3152,27 @@
         "cl": ""
       },
       {
+        "id": "vantor",
+        "label": "Vantor",
+        "type": "company",
+        "dom": "earth_obs",
+        "city": "Denver/Global",
+        "desc": "",
+        "rev": 0,
+        "emp": 0,
+        "heF": 0,
+        "vF": 0,
+        "vc": 0,
+        "fund": 0,
+        "proj": 0,
+        "st": "",
+        "bic": null,
+        "mf": [],
+        "src": [],
+        "bp": 0,
+        "cl": ""
+      },
+      {
         "id": "eu_he",
         "label": "EU Horizon Europe",
         "type": "funder",
@@ -3846,7 +3867,7 @@
       },
       {
         "id": "swedishspace_corporation_esrange_ssc_rymdbolaget",
-        "label": "SWEDISHSPACE CORPORATION ESRANGE SSC RYMDBOLAGET",
+        "label": "SSC SPACE ESRANGE",
         "type": "intl_partner",
         "dom": "",
         "city": "",
@@ -17754,6 +17775,14 @@
       {
         "s": "spacewest",
         "t": "plug_and_play",
+        "tp": "partner",
+        "w": 1,
+        "sl": "",
+        "tl": ""
+      },
+      {
+        "s": "vantor",
+        "t": "LiU",
         "tp": "partner",
         "w": 1,
         "sl": "",

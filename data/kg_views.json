@@ -74423,7 +74423,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 13,
-      "anchoring": 0.083,
+      "anchoring": 0.082,
       "sources": 0,
       "city": "Kiruna",
       "desc": ""
@@ -74471,7 +74471,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 21,
-      "anchoring": 0.134,
+      "anchoring": 0.133,
       "sources": 0,
       "city": "Göteborg",
       "desc": ""
@@ -74487,7 +74487,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 24,
-      "anchoring": 0.153,
+      "anchoring": 0.152,
       "sources": 0,
       "city": "Uppsala",
       "desc": ""
@@ -74503,7 +74503,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 26,
-      "anchoring": 0.166,
+      "anchoring": 0.165,
       "sources": 0,
       "city": "Stockholm",
       "desc": ""
@@ -74535,7 +74535,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 13,
-      "anchoring": 0.083,
+      "anchoring": 0.082,
       "sources": 0,
       "city": "Göteborg",
       "desc": ""
@@ -74550,8 +74550,8 @@
       "papers": 0,
       "funding": 0,
       "emp": 0,
-      "edges": 13,
-      "anchoring": 0.083,
+      "edges": 14,
+      "anchoring": 0.089,
       "sources": 0,
       "city": "Linköping",
       "desc": ""
@@ -74711,7 +74711,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 10,
-      "anchoring": 0.064,
+      "anchoring": 0.063,
       "sources": 0,
       "city": "Uppsala",
       "desc": ""
@@ -74759,7 +74759,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 7,
-      "anchoring": 0.045,
+      "anchoring": 0.044,
       "sources": 0,
       "city": "Stockholm",
       "desc": ""
@@ -74791,7 +74791,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 10,
-      "anchoring": 0.064,
+      "anchoring": 0.063,
       "sources": 0,
       "city": "Norrköping",
       "desc": ""
@@ -74999,7 +74999,7 @@
       "funding": 0,
       "emp": 15,
       "edges": 22,
-      "anchoring": 0.14,
+      "anchoring": 0.139,
       "sources": 0,
       "city": "Luleå",
       "desc": "Automatisk processering av satellitbilder. Acquired by AAC Clyde Space 2024."
@@ -75751,7 +75751,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 10,
-      "anchoring": 0.064,
+      "anchoring": 0.063,
       "sources": 0,
       "city": "Stockholm",
       "desc": "3D-printade mikrovågskomponenter för satellitkommunikation och 5G/6G"
@@ -76557,6 +76557,22 @@
       "desc": ""
     },
     {
+      "id": "vantor",
+      "label": "Vantor",
+      "type": "company",
+      "domain": "earth_obs",
+      "size": 4,
+      "rev": 0,
+      "papers": 0,
+      "funding": 0,
+      "emp": 0,
+      "edges": 1,
+      "anchoring": 0.006,
+      "sources": 0,
+      "city": "Denver/Global",
+      "desc": ""
+    },
+    {
       "id": "eu_he",
       "label": "EU Horizon Europe",
       "type": "funder",
@@ -76679,7 +76695,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 7,
-      "anchoring": 0.045,
+      "anchoring": 0.044,
       "sources": 0,
       "city": "Lund",
       "desc": ""
@@ -76695,7 +76711,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 13,
-      "anchoring": 0.083,
+      "anchoring": 0.082,
       "sources": 0,
       "city": "Trollhättan",
       "desc": ""
@@ -76711,7 +76727,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 30,
-      "anchoring": 0.191,
+      "anchoring": 0.19,
       "sources": 0,
       "city": "Uppsala",
       "desc": ""
@@ -76743,7 +76759,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 18,
-      "anchoring": 0.115,
+      "anchoring": 0.114,
       "sources": 0,
       "city": "Göteborg",
       "desc": "Chalmers Next Labs / VGR rymdplattform. Advocates procurement reform, end-to-end domestic capabilities, government as development partner + anchor customer."
@@ -76791,7 +76807,7 @@
       "funding": 0,
       "emp": 0,
       "edges": 13,
-      "anchoring": 0.083,
+      "anchoring": 0.082,
       "sources": 0,
       "city": "Stockholm",
       "desc": "First Swedish multidisciplinary research center for 6G satellite communications. 60 MSEK from SSF. 21 partners incl. KTH (coordinator), LTU, RISE, IRF, Ericsson, Saab, Ovzon, Beyond Gravity, SSC. Sister center to SweWIN."
@@ -77869,6 +77885,12 @@
       "w": 1
     },
     {
+      "s": "vantor",
+      "t": "LiU",
+      "tp": "partner",
+      "w": 1
+    },
+    {
       "s": "GU",
       "t": "SU",
       "tp": "cross_coauth",
@@ -78597,7 +78619,7 @@
       },
       {
         "id": "swedishspace_corporation_esrange_ssc_rymdbolaget",
-        "l": "SWEDISHSPACE CORPORATION ESRANGE SSC RYMDBOLAGET",
+        "l": "SSC SPACE ESRANGE",
         "tp": "se_participant",
         "c": "",
         "he": 25
@@ -86304,17 +86326,17 @@
         "p": 0,
         "sc": 11,
         "sp": [
-          "smhi",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
-          "ku",
-          "sei",
-          "irf",
-          "tcsol",
-          "gkn_aerospace_sweden_ab",
+          "chalmers_tekniska_hogskola_ab",
           "lunds_universitet",
+          "sei",
           "alma_lov_museum_of_unexp._art",
+          "tcsol",
+          "ku",
           "county_administration_of_vasterbot",
-          "chalmers_tekniska_hogskola_ab"
+          "irf",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi",
+          "gkn_aerospace_sweden_ab"
         ]
       },
       {
@@ -86325,11 +86347,11 @@
         "p": 0,
         "sc": 5,
         "sp": [
-          "smhi",
           "umea_universitet",
-          "irf",
           "lunds_universitet",
-          "foi"
+          "foi",
+          "irf",
+          "smhi"
         ]
       },
       {
@@ -86353,8 +86375,8 @@
         "sc": 4,
         "sp": [
           "smhi",
-          "irf",
           "alma_lov_museum_of_unexp._art",
+          "irf",
           "ku"
         ]
       },
@@ -86366,24 +86388,24 @@
         "p": 0,
         "sc": 18,
         "sp": [
-          "smhi",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
-          "beyond_gravity",
-          "umea_universitet",
-          "tcsol",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
-          "molflow",
-          "lunds_universitet",
-          "alstom_rail_sweden_ab",
-          "brockmann_geomatics",
-          "cnet_svenska_ab",
-          "county_administration_of_vasterbot",
-          "hopsworks",
-          "swegan_ab",
-          "kth",
-          "infobaltic",
           "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "umea_universitet",
+          "chalmers_tekniska_hogskola_ab",
+          "lunds_universitet",
+          "brockmann_geomatics",
+          "beyond_gravity",
+          "cnet_svenska_ab",
+          "alstom_rail_sweden_ab",
+          "kth",
+          "swegan_ab",
+          "tcsol",
+          "molflow",
+          "infobaltic",
+          "hopsworks",
+          "county_administration_of_vasterbot",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget"
         ]
       },
       {
@@ -86394,38 +86416,38 @@
         "p": 0,
         "sc": 32,
         "sp": [
-          "smhi",
-          "scania_cv_ab",
+          "frontgrade_gaisler_ab",
+          "brockmann_geomatics",
           "lantmäteriet",
+          "cnet_svenska_ab",
+          "kth",
+          "foi",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "rise",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "ohb_sweden_ab",
+          "chalmers_tekniska_hogskola_ab",
           "tcsol",
+          "infobaltic",
+          "irnova",
+          "hopsworks",
+          "saab",
+          "boliden_mineral_ab",
+          "telko_international_ab",
+          "waysure",
+          "flowscape_ab",
+          "county_administration_of_vasterbot",
+          "slf_svenska_laserfabriken_ab",
           "gkn_aerospace_sweden_ab",
           "astazero_ab",
-          "waysure",
-          "slf_svenska_laserfabriken_ab",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
-          "alstom_rail_sweden_ab",
-          "irnova",
-          "kth",
-          "infobaltic",
-          "ohb_sweden_ab",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
-          "foi",
-          "frontgrade_gaisler_ab",
-          "flowscape_ab",
           "umea_universitet",
-          "boliden_mineral_ab",
-          "cnet_svenska_ab",
           "lunds_universitet",
-          "rise",
-          "brockmann_geomatics",
-          "nordic_strategy_partners_ab",
-          "hopsworks",
-          "county_administration_of_vasterbot",
-          "swegan_ab",
-          "saab",
-          "telko_international_ab",
           "unibap_ab",
-          "chalmers_tekniska_hogskola_ab"
+          "alstom_rail_sweden_ab",
+          "swegan_ab",
+          "nordic_strategy_partners_ab",
+          "scania_cv_ab",
+          "smhi"
         ]
       },
       {
@@ -86436,17 +86458,17 @@
         "p": 0,
         "sc": 11,
         "sp": [
-          "smhi",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
-          "ohb_sweden_ab",
-          "ku",
-          "tcsol",
-          "molflow",
+          "laurin_maritime",
+          "chalmers_tekniska_hogskola_ab",
           "lunds_universitet",
           "alma_lov_museum_of_unexp._art",
           "foi",
-          "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "tcsol",
+          "molflow",
+          "ku",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi",
+          "ohb_sweden_ab"
         ]
       },
       {
@@ -86457,24 +86479,24 @@
         "p": 0,
         "sc": 18,
         "sp": [
-          "smhi",
-          "scania_cv_ab",
-          "flowscape_ab",
           "umea_universitet",
-          "sei",
-          "boliden_mineral_ab",
-          "gkn_aerospace_sweden_ab",
-          "astazero_ab",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
-          "cnet_svenska_ab",
+          "chalmers_tekniska_hogskola_ab",
           "lunds_universitet",
-          "alstom_rail_sweden_ab",
+          "waysure",
+          "sei",
+          "cnet_svenska_ab",
           "rise",
+          "alstom_rail_sweden_ab",
+          "astazero_ab",
+          "swegan_ab",
           "nordic_strategy_partners_ab",
           "hopsworks",
-          "swegan_ab",
-          "waysure",
-          "chalmers_tekniska_hogskola_ab"
+          "scania_cv_ab",
+          "flowscape_ab",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "gkn_aerospace_sweden_ab",
+          "boliden_mineral_ab"
         ]
       },
       {
@@ -86485,21 +86507,21 @@
         "p": 0,
         "sc": 15,
         "sp": [
-          "smhi",
           "slf_svenska_laserfabriken_ab",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
-          "ohb_sweden_ab",
           "gkn_aerospace_sweden_ab",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "frontgrade_gaisler_ab",
           "lunds_universitet",
+          "chalmers_tekniska_hogskola_ab",
+          "beyond_gravity",
           "alstom_rail_sweden_ab",
           "kth",
-          "hopsworks",
           "swegan_ab",
           "irnova",
-          "beyond_gravity",
-          "frontgrade_gaisler_ab",
-          "chalmers_tekniska_hogskola_ab"
+          "hopsworks",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "ohb_sweden_ab"
         ]
       },
       {
@@ -86510,13 +86532,13 @@
         "p": 0,
         "sc": 7,
         "sp": [
-          "smhi",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "frontgrade_gaisler_ab",
           "lunds_universitet",
+          "unibap_ab",
           "hopsworks",
           "county_administration_of_vasterbot",
-          "frontgrade_gaisler_ab",
-          "unibap_ab"
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi"
         ]
       },
       {
@@ -86538,12 +86560,12 @@
         "p": 0,
         "sc": 6,
         "sp": [
-          "smhi",
-          "ku",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
           "lunds_universitet",
           "alma_lov_museum_of_unexp._art",
-          "county_administration_of_vasterbot"
+          "ku",
+          "county_administration_of_vasterbot",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget"
         ]
       },
       {
@@ -86554,12 +86576,12 @@
         "p": 0,
         "sc": 6,
         "sp": [
-          "smhi",
-          "umea_universitet",
-          "molflow",
-          "lunds_universitet",
           "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "umea_universitet",
+          "chalmers_tekniska_hogskola_ab",
+          "lunds_universitet",
+          "molflow",
+          "smhi"
         ]
       },
       {
@@ -86570,9 +86592,9 @@
         "p": 0,
         "sc": 3,
         "sp": [
-          "molflow",
           "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "chalmers_tekniska_hogskola_ab",
+          "molflow"
         ]
       },
       {
@@ -86583,17 +86605,17 @@
         "p": 0,
         "sc": 11,
         "sp": [
-          "smhi",
-          "lantmäteriet",
-          "telko_international_ab",
-          "gkn_aerospace_sweden_ab",
-          "molflow",
-          "lunds_universitet",
-          "rise",
-          "saab",
-          "kth",
           "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "telko_international_ab",
+          "chalmers_tekniska_hogskola_ab",
+          "lunds_universitet",
+          "lantmäteriet",
+          "rise",
+          "kth",
+          "saab",
+          "molflow",
+          "smhi",
+          "gkn_aerospace_sweden_ab"
         ]
       },
       {
@@ -86604,11 +86626,11 @@
         "p": 0,
         "sc": 5,
         "sp": [
-          "smhi",
-          "molflow",
-          "lunds_universitet",
           "laurin_maritime",
-          "chalmers_tekniska_hogskola_ab"
+          "chalmers_tekniska_hogskola_ab",
+          "lunds_universitet",
+          "molflow",
+          "smhi"
         ]
       },
       {
@@ -86619,16 +86641,16 @@
         "p": 0,
         "sc": 10,
         "sp": [
-          "smhi",
-          "beyond_gravity",
-          "ku",
-          "gkn_aerospace_sweden_ab",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "chalmers_tekniska_hogskola_ab",
           "lunds_universitet",
+          "beyond_gravity",
           "alstom_rail_sweden_ab",
           "alma_lov_museum_of_unexp._art",
           "kth",
-          "chalmers_tekniska_hogskola_ab"
+          "ku",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "gkn_aerospace_sweden_ab"
         ]
       },
       {
@@ -86639,12 +86661,12 @@
         "p": 0,
         "sc": 6,
         "sp": [
-          "smhi",
-          "ohb_sweden_ab",
-          "ku",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
           "alstom_rail_sweden_ab",
-          "alma_lov_museum_of_unexp._art"
+          "alma_lov_museum_of_unexp._art",
+          "ku",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "ohb_sweden_ab"
         ]
       },
       {
@@ -86655,8 +86677,8 @@
         "p": 0,
         "sc": 2,
         "sp": [
-          "smhi",
-          "umea_universitet"
+          "umea_universitet",
+          "smhi"
         ]
       },
       {
@@ -86679,12 +86701,12 @@
         "p": 0,
         "sc": 6,
         "sp": [
-          "smhi",
-          "boliden_mineral_ab",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget",
           "brockmann_geomatics",
           "nordic_strategy_partners_ab",
-          "infobaltic"
+          "infobaltic",
+          "smhi",
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "boliden_mineral_ab"
         ]
       },
       {
@@ -86696,8 +86718,8 @@
         "sc": 3,
         "sp": [
           "smhi",
-          "lunds_universitet",
-          "swedishspace_corporation_esrange_ssc_rymdbolaget"
+          "swedishspace_corporation_esrange_ssc_rymdbolaget",
+          "lunds_universitet"
         ]
       },
       {
@@ -86720,12 +86742,12 @@
         "p": 0,
         "sc": 6,
         "sp": [
-          "smhi",
-          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
           "lunds_universitet",
-          "alstom_rail_sweden_ab",
           "brockmann_geomatics",
-          "infobaltic"
+          "alstom_rail_sweden_ab",
+          "infobaltic",
+          "ugot_-_goeteborgs_universitet/university_of_gothenburg",
+          "smhi"
         ]
       },
       {
@@ -86881,8 +86903,8 @@
         "p": 0,
         "sc": 2,
         "sp": [
-          "brockmann_geomatics",
-          "infobaltic"
+          "infobaltic",
+          "brockmann_geomatics"
         ]
       },
       {
@@ -86893,11 +86915,11 @@
         "p": 0,
         "sc": 5,
         "sp": [
-          "scania_cv_ab",
-          "astazero_ab",
-          "rise",
           "waysure",
-          "flowscape_ab"
+          "scania_cv_ab",
+          "flowscape_ab",
+          "rise",
+          "astazero_ab"
         ]
       }
     ],
